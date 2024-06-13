@@ -162,19 +162,19 @@
           развитии событий.</p>
       </div>
     </div>
-    <script
-      type="text/javascript">!(function (w, d, s, l, x) { w[l] = w[l] || []; w[l].t = w[l].t || new Date().getTime(); var f = d.getElementsByTagName(s)[0], j = d.createElement(s); j.async = !0; j.src = '//web.tolstoycomments.com/sitejs/app.js?i=' + l + '&x=' + x + '&t=' + w[l].t; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'tolstoycomments', '5909');</script>
-
-    <div class="tolstoycomments-feed"></div>
-    <script type="text/javascript">
-      window['tolstoycomments'] = window['tolstoycomments'] || [];
-      window['tolstoycomments'].push({
-        action: 'init',
-        values: {
-          visible: true
-        }
-      });
-    </script>
+    <div id="anycomment-app"></div>
+<script>
+AnyComment = window.AnyComment || []; AnyComment.Comments = [];
+AnyComment.Comments.push({
+    "root": "anycomment-app",
+    "app_id": 6474,
+    "language": "ru"
+})
+var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+s.src = "https://widget.anycomment.io/comment/embed.js";
+var sa = document.getElementsByTagName("script")[0];
+sa.parentNode.insertBefore(s, s.nextSibling);
+</script>
   </body>
 
   </html>
